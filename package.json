@@ -1,0 +1,38 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "https://Eddienewpath.github.io/eddie_home",
+  "proxy": {
+    "/auth/*": {
+      "target": "http://localhost:3001"
+    },
+    "/api/*": {
+      "target": "http://localhost:3001"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "better-react-spinkit": "^2.0.2",
+    "classnames": "^2.2.5",
+    "gh-pages": "^2.0.1",
+    "react": "^16.0.0",
+    "react-awesome-modal": "^2.0.1",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.0.0",
+    "react-dropzone": "^4.2.0",
+    "react-dropzone-s3-uploader": "^1.1.0",
+    "react-scripts": "1.0.14",
+    "react-svg-inline": "^2.0.0",
+    "react-tooltip": "^3.3.1",
+    "superagent": "^3.6.3"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

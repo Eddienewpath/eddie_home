@@ -1,0 +1,11 @@
+#contact-me-p {
+    margin: 20px 0px;
+}
+
+#message-me-btn {
+    margin-top: .5rem;
+}
+
+#message-me-btn:hover {
+    cursor: pointer;
+}
